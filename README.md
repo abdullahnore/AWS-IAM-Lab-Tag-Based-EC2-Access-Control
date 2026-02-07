@@ -35,7 +35,8 @@ Region
 
 Asia Pacific (Mumbai)
 
-📸 [Add architecture or EC2 overview screenshot here]
+
+<img width="922" height="323" alt="ec2 page" src="https://github.com/user-attachments/assets/6e284bb1-440a-44e3-8ef5-1aeefa2cd877" />
 
 EC2 Setup
 
@@ -47,7 +48,7 @@ dev-ec2 → tagged Env=development
 
 Tags are used as the security control point, not instance names.
 
-📸 [Add EC2 instances + tags screenshot here]
+
 
 IAM Design
 User & Group
@@ -60,7 +61,11 @@ Permissions are assigned to the group, not directly to the user
 
 This follows AWS best practices and scales cleanly.
 
-📸 [Add IAM user & group screenshot here]
+<img width="688" height="300" alt="user-group-attach" src="https://github.com/user-attachments/assets/58a848be-f932-415b-833d-928d542a87d6" />
+
+<img width="704" height="356" alt="creating-usersiam" src="https://github.com/user-attachments/assets/1379e4aa-64bf-4de3-84b4-6d7597e6e1ca" />
+<img width="937" height="338" alt="addusser-togruop" src="https://github.com/user-attachments/assets/4c69c7cb-27e0-4b39-85be-86ce3a73070f" /><img width="937" height="347" alt="user-created" src="https://github.com/user-attachments/assets/c60a415d-9072-483b-9381-373a05772e56" />
+
 
 Custom IAM Policy – Dev-limits
 {
@@ -100,7 +105,8 @@ Read-only visibility across EC2
 
 Explicit deny prevents tag manipulation (no privilege escalation)
 
-📸 [Add policy JSON screenshot here]
+
+<img width="833" height="355" alt="policy-json" src="https://github.com/user-attachments/assets/c0113e58-98a1-4d2a-8c70-f0153ff466b5" />
 
 Validation & Errors (Expected Behavior)
 Production Instance
@@ -115,7 +121,9 @@ S3 & Service Catalog
 
 These failures confirm the policy is working as intended.
 
-📸 [Add access denied error screenshot here]
+<img width="926" height="382" alt="ganesh acces-check1" src="https://github.com/user-attachments/assets/a0eea564-a71c-442a-9b26-3c4573fa3b6e" />
+
+<img width="735" height="377" alt="error-ec2" src="https://github.com/user-attachments/assets/201b2c60-b7dd-4ab8-86ac-e9f961362d3e" />
 
 Security Takeaways
 
